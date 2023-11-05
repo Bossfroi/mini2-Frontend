@@ -32,7 +32,7 @@ export default function AppRoute({ children }) {
     
       <Navigation />
       <Routes>
-        <Route path="/" element={<Home />}/>
+        <Route path="" element={<Home />}/>
         <Route path="/home" element={<Home/>}/>
         <Route path="/Categories" element={<Categories/>}/>
         <Route path="/ContactUs" element={<ContactUs/>}/>
