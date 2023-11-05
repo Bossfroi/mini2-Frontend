@@ -45,7 +45,7 @@ const HomeLogged = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/data/view');
+        const response = await axios.get('https://mini2-frontend.onrender.com/data/view');
         setData(response.data);
   
         localStorage.setItem('userData1', JSON.stringify(response.data));
@@ -66,7 +66,7 @@ const HomeLogged = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        'http://localhost:5000/data/addOrUpdateUserdata',
+        'https://mini2-frontend.onrender.com/data/addOrUpdateUserdata',
         formData,
         {
           headers: {

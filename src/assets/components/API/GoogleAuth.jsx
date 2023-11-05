@@ -23,7 +23,7 @@ export default function GoogleAuth() {
       console.log(credentialResponseJSON); // Ipapakita sa console ang JSON string ng decoded response
 
       // I-send ang data sa server para i-authenticate o i-update ang user
-      const response = await fetch('http://localhost:5000/authGoogle/addOrUpdate', {
+      const response = await fetch('https://mini2-frontend.onrender.com/authGoogle/addOrUpdate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

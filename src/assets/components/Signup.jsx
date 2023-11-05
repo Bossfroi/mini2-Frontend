@@ -31,7 +31,7 @@ localStorage.getItem('userDatasss');
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/SignupRegs/register', formData, {
+      const response = await axios.post('https://mini2-frontend.onrender.com/SignupRegs/register', formData, {
         headers: {
           'Content-Type': 'application/json',
         },

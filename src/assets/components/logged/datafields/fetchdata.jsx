@@ -57,7 +57,7 @@ export default function FetchData() {
       };
 
       axios
-        .post('http://localhost:5000/data/addOrUpdateUserdata', data)
+        .post('https://mini2-frontend.onrender.com/data/addOrUpdateUserdata', data)
         .then((response) => {
           localStorage.setItem('userData1', JSON.stringify(response.data));
           // Navigate to the '/Categories' route after a successful response

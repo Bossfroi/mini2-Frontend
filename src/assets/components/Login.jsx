@@ -29,7 +29,7 @@ export default function Login() {
     e.preventDefault();  // pag pigil para sa pag susubmit ng walangdata so babalik sya sa login 
 
     try {
-      const response = await axios.post('http://localhost:5000/login', formData);   // set response mula para sa localhost kung nasaan ung ginawang function ng serverside
+      const response = await axios.post('https://mini2-frontend.onrender.com/login', formData);   // set response mula para sa localhost kung nasaan ung ginawang function ng serverside
 
       if (response.status === 200) {
         setIsAuthenticated(true); // I-set ang authentication status para sa navigation para mag bago ang linking
@@ -89,14 +89,7 @@ export default function Login() {
           </button>
 
           {/* Magdagdag ng mga Facebook at Google login components dito */}
-          <div className="mt-2 ml-14">
-            <img
-              className="facebook cursor-pointer shadow-sm"
-              src="https://scontent.fmnl16-1.fna.fbcdn.net/v/t39.2365-6/294967112_614766366879300_4791806768823542705_n.png?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=e280be&amp;_nc_eui2=AeHEMck23tE0et5GlZGvfeYkNe_rkd5ELpg17-uR3kQumM4d2aF4abWjSYt5iQ47Y-usznBMDIwD1Jfa1N27QX-k&amp;_nc_ohc=k3PXaTp2e9AAX-684Xg&amp;_nc_ht=scontent.fmnl16-1.fna&amp;oh=00_AfA-86JKfEtq8hTizV5dNRuotagDEm7u5LGWE9_jD_lOig&amp;oe=65425BE4"
-              alt="Facebook"
-              id="facebook"
-            />
-          </div>
+        
           <div className="mt-2 ml-14">
             <GoogleAuth /> {/* I-load ang Google authentication component */}
             <br />
