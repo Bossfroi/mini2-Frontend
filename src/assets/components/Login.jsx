@@ -5,6 +5,7 @@ import { useBearStore } from './Navigation'; // Import ng custom hook para sa na
 import axios from 'axios'; // Import ng Axios para sa HTTP requests
 import logo from './images/Logo.png';
 import Footer from './Footer';
+import Signup from './Signup';
 
 export default function Login() {
   const navigate = useNavigate(); // Hook para sa navigation
@@ -93,7 +94,7 @@ export default function Login() {
           <div className="mt-2 ml-14">
             <GoogleAuth /> {/* I-load ang Google authentication component */}
             <br />
-            <a href="/Signup"className="bg-sky-600 hover:bg-red-700 shadow-lg py-1 px-10 rounded-md ">
+            <a href={'/Signup'}className="bg-sky-600 hover:bg-red-700 shadow-lg py-1 px-10 rounded-md ">
               Sign-up Manually
             </a>
           </div>
