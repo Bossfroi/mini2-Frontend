@@ -18,7 +18,7 @@ const data = require('./RouterServerSide/Userdata');
 app.use(cors());
 
 app.use(express.json()); // Middleware para sa pag-parse ng JSON data mula sa HTTP requests
-app.options('*', cors()); // Pinapayagan ang pre-flight requests para sa CORS support ito ay para sa pag-aapply ng HTTP request endpoint. Pag wala nito, madalas may error.
+ // Pinapayagan ang pre-flight requests para sa CORS support ito ay para sa pag-aapply ng HTTP request endpoint. Pag wala nito, madalas may error.
 
 const uri = process.env.ATLAS_URI;
 
