@@ -1,0 +1,45 @@
+# Ignore Node.js modules and logs
+node_modules/
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Ignore built files and local development files
+dist/
+dist-ssr/
+*.local
+
+# Ignore generated files and dependencies related to JavaScript tools
+.pnp
+.pnp.js
+
+# Ignore test coverage reports
+/coverage
+
+# Ignore build output for production
+build/
+
+# Ignore miscellaneous files and directories
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore editor-specific files and directories
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Ignore yarn v2+ cache
+.yarn/cache
